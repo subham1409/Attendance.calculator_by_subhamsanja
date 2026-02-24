@@ -13,7 +13,7 @@ const outcome = document.getElementById("outcome");
 
     let prebunk = currenttotal - current;
     let lactureremain = 0.8 * currenttotal + 0.8 * remain - current;
-    let bunk = remain - lactureremain;
+    let bunk = Number(remain - lactureremain).toFixed(0);
 
     if(presentattandance >= 90)
         {
